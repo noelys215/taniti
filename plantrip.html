@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Plan Your Trip</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="logo" href="index.html">Taniti</a>
+			<div class="nav-links">
+				<li><a href="#">Discover Taniti</a></li>
+				<li><a href="#">Plan Your Trip</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</div>
+
+			<div class="search-bar">
+				<div class="nav-links">
+					<a href="index.html#faq-section">FAQs</a>
+				</div>
+				<input type="search" placeholder="Search..." />
+			</div>
+			<a class="logo modal" href="index.html">Taniti</a>
+			<div class="hamburger" onclick="toggleModal(true)">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Discover Taniti</a></li>
+					<li><a href="#">Plan Your Trip</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<a class="close" onclick="toggleModal(false)">&#10539;</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section>
+				<div class="text-card">
+					<h2 class="text-card-title">Plan Your Trip to Taniti</h2>
+					<p class="text-card-text">
+						Taniti is a small, tropical island in the Pacific. While the island has an
+						area of less than 500 square miles, the terrain is varied and includes both
+						sandy and rocky beaches, a small but safe harbor, lush tropical rainforests,
+						and a mountainous interior that includes a small, active volcano. Taniti has
+						an indigenous population of about 20,000. Until a recent increase in
+						tourism, most the Tanitian economy was dominated by fishing or agriculture.
+					</p>
+				</div>
+			</section>
+
+			<div class="map-card">
+				<img class="map" src="./images/tanitiMap.png" alt="" />
+				<!-- FORM START -->
+				<div class="form-container">
+					<div class="form-card">
+						<form class="trip-form">
+							<input
+								type="text"
+								id="fullname"
+								name="fullname"
+								placeholder="Full Name"
+								required
+							/>
+
+							<select id="guests" name="guests">
+								<option value="">Number of Guests</option>
+								<script>
+									for (let i = 1; i <= 9; i++) {
+										document.write(
+											'<option value="' + i + '">' + i + '</option>'
+										);
+									}
+								</script>
+							</select>
+
+							<select id="package" name="package">
+								<option value="">Select a Package</option>
+								<option value="package1">Lorem Ipsum Package</option>
+								<option value="package2">Dolor Sit Amet Package</option>
+								<option value="package3">Consectetur Package</option>
+								<option value="package4">Adipiscing Elit Package</option>
+							</select>
+
+							<div class="date-inputs">
+								<input type="date" id="start-date" name="start-date" />
+								<input type="date" id="end-date" name="end-date" />
+							</div>
+
+							<div class="payment-options">
+								<label
+									><input
+										type="radio"
+										name="payment-option"
+										value="credit"
+										checked
+									/>Credit</label
+								>
+								<label
+									><input
+										type="radio"
+										name="payment-option"
+										value="debit"
+									/>Debit</label
+								>
+								<label
+									><input
+										type="radio"
+										name="payment-option"
+										value="cash"
+									/>Cash</label
+								>
+							</div>
+
+							<textarea
+								id="special-requests"
+								name="special-requests"
+								placeholder="Special Requests"
+								fixed
+							></textarea>
+
+							<button class="button-19" type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+				<!-- FORM END -->
+			</div>
+
+			<section>
+				<div class="text-card">
+					<img src="./images/footerImage.jpg" alt="" />
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>Travel Taniti © 2024. All rights reserved.</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="logo" href="index.html">Taniti</a>
+			<div class="nav-links">
+				<li><a href="#">Discover Taniti</a></li>
+				<li><a href="#">Plan Your Trip</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</div>
+
+			<div class="search-bar">
+				<div class="nav-links">
+					<a href="#faq-section">FAQs</a>
+				</div>
+				<input type="search" placeholder="Search..." />
+			</div>
+			<a class="logo modal" href="index.html">Taniti</a>
+			<div class="hamburger" onclick="toggleModal(true)">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Discover Taniti</a></li>
+					<li><a href="#">Plan Your Trip</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<a class="close" onclick="toggleModal(false)">&#10539;</a>
+				</div>
+			</div>
+		</header>
+		<!-- Hero -->
+		<main></main>
+		<!-- Footer -->
+		<footer>Travel Taniti © 2024. All rights reserved.</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>

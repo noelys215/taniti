@@ -1,0 +1,51 @@
+<div class="form-container">
+	<div class="form-card">
+		<form class="trip-form">
+			<input type="text" id="fullname" name="fullname" placeholder="Full Name" required />
+
+			<select id="guests" name="guests">
+				<option value="">Number of Guests</option>
+				<script>
+					for (let i = 1; i <= 9; i++) {
+						document.write('<option value="' + i + '">' + i + '</option>');
+					}
+				</script>
+			</select>
+
+			<select id="package" name="package">
+				<option value="">Select a Package</option>
+				<option value="package1">Lorem Ipsum Package</option>
+				<option value="package2">Dolor Sit Amet Package</option>
+				<option value="package3">Consectetur Package</option>
+				<option value="package4">Adipiscing Elit Package</option>
+			</select>
+
+			<div class="date-inputs">
+				<input type="date" id="start-date" name="start-date" />
+				<input type="date" id="end-date" name="end-date" />
+			</div>
+
+			<div class="payment-options">
+				<label
+					><input
+						type="radio"
+						name="payment-option"
+						value="credit"
+						checked
+					/>Credit</label
+				>
+				<label><input type="radio" name="payment-option" value="debit" />Debit</label>
+				<label><input type="radio" name="payment-option" value="cash" />Cash</label>
+			</div>
+
+			<textarea
+				id="special-requests"
+				name="special-requests"
+				placeholder="Special Requests"
+				fixed
+			></textarea>
+
+			<button class="button-19" type="submit">Submit</button>
+		</form>
+	</div>
+</div>

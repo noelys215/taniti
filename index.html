@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel Taniti</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="logo" href="index.html">Taniti</a>
+			<div class="nav-links">
+				<li><a href="discover.html">Discover Taniti</a></li>
+				<li><a href="plantrip.html">Plan Your Trip</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</div>
+
+			<div class="search-bar">
+				<div class="nav-links">
+					<a href="#faq-section">FAQs</a>
+				</div>
+				<input type="search" placeholder="Search..." />
+			</div>
+			<a class="logo modal" href="index.html">Taniti</a>
+			<div class="hamburger" onclick="toggleModal(true)">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<li><a href="#">Home</a></li>
+					<li><a href="discover.html">Discover Taniti</a></li>
+					<li><a href="plantrip.html">Plan Your Trip</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<a class="close" onclick="toggleModal(false)">&#10539;</a>
+				</div>
+			</div>
+		</header>
+		<!-- Hero -->
+		<main>
+			<section class="hero">
+				<div class="card">
+					<h1>Discover the Hidden Gem of the Pacific</h1>
+					<button class="button-19">
+						<a href="discover.html">Discover Taniti</a>
+					</button>
+				</div>
+			</section>
+			<!-- Introduction -->
+			<section>
+				<div class="text-card">
+					<h2 class="text-card-title">Welcome to Taniti</h2>
+					<p class="text-card-text">
+						Taniti is a small, tropical island in the Pacific. While the island has an
+						area of less than 500 square miles, the terrain is varied and includes both
+						sandy and rocky beaches, a small but safe harbor, lush tropical rainforests,
+						and a mountainous interior that includes a small, active volcano. Taniti has
+						an indigenous population of about 20,000. Until a recent increase in
+						tourism, most the Tanitian economy was dominated by fishing or agriculture.
+					</p>
+				</div>
+			</section>
+
+			<!-- FAQs -->
+			<section id="faq-section" class="faq-section">
+				<h2>Frequently Asked Questions</h2>
+				<div class="faq-container">
+					<div class="faq">
+						<button class="faq-toggle">
+							What is the voltage of power outlets in Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Power outlets are 120 volts, the same as in the United States.
+						</div>
+					</div>
+					<!--FAQ-->
+					<div class="faq">
+						<button class="faq-toggle">
+							When is alcohol not allowed to be served or sold?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Alcohol is not allowed to be served or sold between the hours of
+							midnight and 9:00 a.m.
+						</div>
+					</div>
+					<!--FAQ-->
+					<div class="faq">
+						<button class="faq-toggle">
+							What is the legal drinking age in Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							The drinking age on Taniti is 18 and is not strictly enforced.
+						</div>
+					</div>
+					<!-- FAQ-->
+					<div class="faq">
+						<button class="faq-toggle">
+							Do Tanitians speak English?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Many younger Tanitians speak fluent English. Very little English is
+							spoken in rural areas, especially by the older residents.
+						</div>
+					</div>
+					<!-- FAQ -->
+					<div class="faq">
+						<button class="faq-toggle">
+							Is there medical support available on Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							There is one hospital and several clinics. The hospital has many
+							multilingual employees.
+						</div>
+					</div>
+					<!-- FAQ -->
+					<div class="faq">
+						<button class="faq-toggle">
+							How common is crime in Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Violent crime is very rare on Taniti, but as tourism increases, there
+							are more reports of pick-pocketing and other petty crimes.
+						</div>
+					</div>
+					<!-- FAQ -->
+					<div class="faq">
+						<button class="faq-toggle">
+							Are there any special considerations for national holidays in Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Taniti enjoys a large number of national holidays, and many tourist
+							attractions and restaurants will be closed on holidays, so visitors
+							should plan accordingly.
+						</div>
+					</div>
+					<!-- FAQ -->
+					<div class="faq">
+						<button class="faq-toggle">
+							What currencies are accepted in Taniti?
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer">
+							Taniti uses the U.S. dollar as its currency, but many businesses will
+							also accept euros and yen. Several banks facilitate currency exchange,
+							and many businesses accept major credit cards.
+						</div>
+					</div>
+					<!-- FAQ -->
+				</div>
+			</section>
+
+			<!-- Testimonial 1 -->
+			<section class="testimonials">
+				<h1>Testimonials</h1>
+				<figure class="testimonial">
+					<img src="./images/test1.jpg" alt="profile-sample2" />
+					<figcaption>
+						<blockquote>
+							<p>
+								Our family vacation to Taniti was unforgettable; the pristine
+								beaches and friendly locals made it a paradise on earth!
+							</p>
+						</blockquote>
+						<h3>Asuka Langley</h3>
+						<h5>Germany</h5>
+					</figcaption>
+				</figure>
+				<!-- Testimonial 2 -->
+				<figure class="testimonial">
+					<img src="./images/test2.jpg" alt="profile-sample7" />
+					<figcaption>
+						<blockquote>
+							<p>
+								Taniti's vibrant culture and breathtaking landscapes took my breath
+								away – I can't wait to return!
+							</p>
+						</blockquote>
+						<h3>Ramona Flowers</h3>
+						<h5>Canada</h5>
+					</figcaption>
+				</figure>
+				<!-- Testimonial 3 -->
+				<figure class="testimonial">
+					<img src="./images/test3.jpg" alt="profile-sample6" />
+					<figcaption>
+						<blockquote>
+							<p>
+								From the incredible rainforest hikes to the delicious local cuisine,
+								Taniti offered an adventure like no other!
+							</p>
+						</blockquote>
+						<h3>Naota Nandaba</h3>
+						<h5>Japan</h5>
+					</figcaption>
+				</figure>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer>Travel Taniti © 2024. All rights reserved.</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
