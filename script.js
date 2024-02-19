@@ -35,3 +35,14 @@ function toggleModal(show) {
 	var modal = document.getElementById('myModal');
 	modal.style.display = show ? 'block' : 'none';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	const submitButton = document.getElementById('submitAlert');
+	const form = document.querySelector('.trip-form');
+
+	submitButton.addEventListener('click', (e) => {
+		e.preventDefault();
+		alert('Request Submitted Successfully!');
+		form.reset();
+	});
+});

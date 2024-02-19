@@ -53,7 +53,7 @@ li {
 }
 .hero {
 	/* background-image: url('./images/heroImage.jpg'); */
-	background-image: linear-gradient(to bottom, transparent, #f6f1f1),
+	background-image: linear-gradient(to bottom, transparent, #f2f2eb),
 		url('./images/heroImage.jpg');
 	background-size: cover;
 	background-position: center;
