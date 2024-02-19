@@ -20,6 +20,10 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: var(--backgroundColor);
+	/* background-image: url('./images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; */
 }
 
 header {
@@ -48,13 +52,15 @@ li {
 	min-height: 900px;
 }
 .hero {
-	background-image: url('./images/heroImage.jpg');
+	/* background-image: url('./images/heroImage.jpg'); */
+	background-image: linear-gradient(to bottom, transparent, #f6f1f1),
+		url('./images/heroImage.jpg');
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	padding: 50px 20px;
 	max-height: auto;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 .hero h1 {
 	font-family: 'Briston';
@@ -463,6 +469,7 @@ footer {
 .activity-card img {
 	width: 100%;
 	height: auto;
+	max-height: 550px;
 	object-fit: cover;
 }
 
@@ -606,4 +613,21 @@ textarea {
 	.map-card {
 		flex-direction: column;
 	}
+}
+
+.contact-card {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-form-container {
+	margin: 1rem auto;
+	width: 600px;
+}
+
+.contact-form-card {
+	background: white;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
